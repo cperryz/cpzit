@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  width: 60px;
+  background-color: #48a722;
+}
+body {background-color: rgba(14, 230, 194, 0.904);}
+  h1   {color: rgb(11, 223, 99);}
+  p    {color: rgb(255, 209, 3);}
+  body {
+  font-family: sans-serif;
+}
+.form-container {
+  width: 50%;
+  margin: auto;
+  padding: 2%;
+  border: 1px solid #f7f7f7;
+}
+label {
+  display: block;
+  margin-top: 25px;
+  font-size: 1rem;
+}
+input, textarea {
+  width: 80%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+button {
+  width: 82.5%;
+  height: 50px;
+  border-radius: 5px;
+  color: #fff;
+  background: blue;
+  line-height: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid blue;
+  margin-top: 25px;
+  transition: color .4s ease-out, background .4s ease-out;
+}
+button:hover {
+  color: blue;
+  background: green;
+}
+.errors {
+  display: block;
+  color: black;
+  margin-top: 5px;
+}
+.error {
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  box-shadow: 0 0 15px 0 rgb(0, 0, 0);
+}
+
+body {background-color: rgb(84, 199, 122);}
+h1   {color: rgb(0, 0, 0);}
+p    {color: rgb(7, 7, 7);} 
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+</style>
+</head>
+<body>
+    <ul class="topnav">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="page1.html">Fletcher Moss Park</a></li>
+        <li><a href="page2.html">St Johns Gardens</a></li>
+        <li><a href="page3.html">Peel Park</a></li>
+        <li><a href="page4.html">Heaton Park</a></li>
+        <li><a href="page5.html">Contact form</a></li>
+      </ul>
+</div>
+<script>
+  var validate = function(e) {
+    var fields = document.querySelectorAll('.form-container textarea, .form-container input[type="text"]');
+    var regEx;
+    var removeSpan;
+    var par;
+    var check = false;
+    var val;
+    var errArr = [];
+
+    for (var i = 0; i < fields.length; i++) {
+        if (fields[i].value === "") {
+          
+            if (fields[i].nextElementSibling.classList.contains('error')) {
+              removeSpan = fields[i].nextElementSibling;
+              par = fields[i].parentNode;
+              par.removeChild(removeSpan);
+              fields[i].nextElementSibling.innerHTML = "Hmmm! " + fields[i].placeholder + " is required?";
+              fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
+              check = false;
+              errArr.push(fields[i]);
+            }
+            fields[i].nextElementSibling.innerHTML = "Hmmm! " + fields[i].placeholder + " is required?";
+            fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
+            check = false;
+            errArr.push(fields[i]);
+        } else {
+
+            // check if message and name values contain valid characters.
+            if (fields[i].id !== 'email' && fields[i].id !== 'phone') {
+                val = isValidChar(fields[i]);
+                if(val === false) {
+                  fields[i].nextElementSibling.innerHTML = "Are you trying to HACK ME!";
+                  fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
+                  check = false;
+                  errArr.push(fields[i]);
+                } else {
+                  fields[i].nextElementSibling.innerHTML = "";
+                  fields[i].style.boxShadow = "none";
+                  check = true;
+                }
+            }
+          
+            if(fields[i].id === 'phone') {
+              val = isValidPhone(fields[i]);
+              if(val === false) {
+                fields[i].nextElementSibling.innerHTML = "Hmmm! Your phone number is not valid?";
+                fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
+                check = false;
+                errArr.push(fields[i]);
+              } else {
+                fields[i].nextElementSibling.innerHTML = "";
+                fields[i].style.boxShadow = "none";
+                check = true;  
+              }
+            }
+
+            if (fields[i].id === 'email') {
+                val = isValidEmail(fields[i]);
+                if(val === false) {
+                    fields[i].nextElementSibling.innerHTML = "Hmmm! Your email address is not valid?";
+                    fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
+                    check = false;
+                    errArr.push(fields[i]);
+                } else {
+                    fields[i].nextElementSibling.innerHTML = "";
+                    fields[i].style.boxShadow = "none";
+                    check = true;
+                }
+            }
+        }
+    }
+  
+    if(check === false) {
+      var count = 0;
+      var toErr = setInterval(function() {
+        var e = errArr[0].offsetTop + -25;
+        var pos = Math.abs(e);
+        if(count < pos) {
+          count ++;
+          window.scrollTo(0, count);
+        } else {
+          clearInterval(toErr);
+        }
+      }, 1);
+    }
+    
+    return check
+
+    // Helper functions.
+    function isValidEmail(e) {
+        regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var email = e.value;
+        if (!regEx.test(email)) {
+            return false;
+        }
+    }
+
+    function isValidChar(e) {
+        regEx = /^[a-zA-Z@#$%!?^&*()_+\-=\[\]{};':"\\|,.\/? ]*$/;
+        var value = e.value;
+        if (!regEx.test(value)) {
+            return false;
+        }
+    }
+  
+    function isValidPhone(e) {
+      regEx = /^[+]?[(]?[+]?\d{2,4}[)]?[-\s]?\d{2,8}[-\s]?\d{2,8}$/;
+      var value = e.value;
+      if(!regEx.test(value)) {
+        return false;
+      }
+    }
+};
+</script>
+<div class="form-container">
+  <h1>Contact Form</h1>
+  <form name="contactForm" method="post" onsubmit = "return validate()" action="#">
+    <label for="name">* Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name" >
+    <span class="errors"></span><br>
+
+    <label for="email">* Email</label>
+    <input type="text" placeholder="Email address" id="email" name="email" >
+    <span class="errors"></span><br>
+
+    <label for="phone">* Phone</label>
+    <input type="text" placeholder="Phone number" id="phone" name="phone" >
+    <span class="errors"></span><br>
+    
+    <label for="subject">* Message</label>
+    <textarea placeholder="Your message" cols="132" rows="5" name="subject" id="subject"></textarea>
+    <span class="errors"></span><br>
+
+    <button type="submit" value="Submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html> 

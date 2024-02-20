@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us</title>
+<style>
+body {background-color: #02bfe7;}
+h1   {color: #2e8540;text-align: center; border:8px rgba(77, 75, 75, 0.671);background-color: #fdb81e;width: 100%;}
+p    {color: #3b3b3b;text-align: center; border: 10px rgba(63, 60, 60, 0.671);border-style: solid;;font-size: 220%;}
+</style>
+</head>
+<body>
+<img src="content/Banner1.jpg"alt="banner for the webiste plant, painting and natural" style="width:100%">
+<h1>Contact Us</h1>
+<p></p>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  function validateForm() {
+    let x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<h3>Contact Form</h3>
+<div class="container">
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    First Name <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  </form>
+    
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Last Name <input type="text" id="lname" name="Last Name" placeholder="Your Last name..">
+  </form>
+
+  <label for="country">Country</label>
+  <select id="country" name="country">
+    <option value="australia">Australia</option>
+    <option value="canada">Canada</option>
+    <option value="usa">USA</option>
+  </select>
+
+  <label for="subject">Subject</label>
+  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  <input type="submit" value="Submit">
+  </form>
+</div>
+
+

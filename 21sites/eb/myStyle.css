@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  background-color: #2a2a2a;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #808080;
+}
+
+.active {
+  background-color: #ea80ff;
+}
+
+div {
+  width: 200px;
+  height: 5px;
+  background-color: red;
+  position: relative;
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+
+@keyframes myfirst {
+  0%   {background-color:red; left:0%; top:0%;}
+	100%  {background-color:orange; left:90%; top:0;}
+}
+
+
+h1 {
+  color: white;
+}
+
+h2 {
+color : white;
+}
+	
+p {
+  color : lightpink;
+}
+
+h3 {
+  color : lightpink;
+}
+
+body {
+  background-color: #2a2a2a;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #808080;
+}
+
+.active {
+  background-color: #ea80ff;
+}
+
+
+
+
+
+
+
+
+
+

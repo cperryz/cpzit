@@ -1,0 +1,15 @@
+body{
+	background-color:skyblue;
+	font-family:'Modern NO.20', regular;
+}
+h1{
+	color:purple;
+	font-family:'Modern NO. 20', monospace;
+}
+p{
+	color:purple;
+	font-family:'Modern NO. 20', monospace;
+}
+label{
+	color:purple
+	font-family:'Modern NO. 20', monospace;

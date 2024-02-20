@@ -1,0 +1,589 @@
+/* This is the content for Index page*/
+body {
+	background-color: #242E38; 
+	color: white; 
+	font-family: Verdana;
+	font-size: 20px; 
+} 
+.nav {
+	position: sticky; 
+	top: 0px;
+	background-color: #242E38; 
+	border-color: white; 
+	border-style: outset; 
+} 
+.nav_position {
+	position: fixed; 
+	top: 10; 
+	left: 500; 
+	z-index: 1;
+} 
+.animation {
+	position: relative; 
+	top: 220; 
+	left: 720; 
+} 
+.text1 { 
+	position: relative; 
+	font-size: 20px;  
+	left: 5px; 
+	max-width: 1800px; 
+} 
+.text2 { 
+	position: relative; 
+	font-size: 20px;  
+	left: 5px; 
+} 
+.header1 { 
+	position: relative; 
+	left: 300px; 
+	font-size: 20px; 
+	text-align: center; 
+	background-color: #3c4d5d; 
+	max-width: 1250px; 
+	color: #ffc62a; 
+} 
+.header2 { 
+	position: relative; 
+	font-size: 20px; 
+	left: 500px; 
+	text-align: center; 
+	background-color: #3c4d5d; 
+	max-width: 900px; 
+	color: #ffc62a; 
+} 
+.content1 {
+	background-color: #3c4d5d; 
+	position: relative; 
+	bottom: 200px;
+	max-width: 1800px; 
+} 
+.content2 {
+	position: relative; 
+	background-color: #3c4d5d;  
+	bottom: 200px; 
+	max-width: 1800px; 
+} 
+.image1 {
+	position: relative; 
+	left: 1400px; 
+	bottom: 600px; 
+	
+}
+.Footer1 {
+	position: relative; 
+	background-color: #3c4d5d;  
+	color: #ffc62a; 
+	max-width: 1800px; 
+} 
+/* This is the content for Antivirus page*/
+.Antivirus_header1 {
+	position: relative; 
+	left: 550px; 
+	font-size: 20px; 
+	text-align: center; 
+	background-color: #3c4d5d; 
+	max-width: 900px; 
+	color: #ffc62a;
+	border-style: dotted; 
+}
+.Antivirus_text1 {
+	position: relative; 
+	bottom: 900px; 
+	left: 1400px; 
+	border-color: white; 
+	border-style: outset; 
+	max-width: 340px;  
+}
+.Antivirus_content1 {
+	background-color: #3c4d5d; 
+	position: relative; 
+	top: 25px; 
+	left: 100px; 
+	max-width: 800px;
+	border-style: dotted; 
+	border-color: #ffc62a
+}
+.Antivirus_header2 {
+	position: relative; 
+	text-align: center; 
+	color: #ffc62a
+} 
+.Antivirus_header3 {
+	position: relative; 
+	text-align: center; 
+	background-color: #3c4d5d; 
+	color: #ffc62a;
+}
+.Antivirus_image1 { 
+	position: relative; 
+	bottom: 775px; 
+	left: 930px; 
+}
+.Antivirus_content2 {
+	background-color: #3c4d5d; 
+	position: relative; 
+	left: 930px; 
+	bottom: 800px; 
+	max-width: 650px;
+	border-style: dotted; 
+	border-color: #ffc62a; 
+} 
+.Antivirus_text2 { 
+	font-size: 20px; 
+}
+.Antivirus_text3 {
+	font-size: 18px; 
+}
+.Antivirus_Video {
+	position: relative; 
+	bottom: 750px; 
+	left: 600px;
+} 	
+.Footer2 {
+	position: relative; 
+	background-color: #3c4d5d;  
+	color: #ffc62a; 
+	max-width: 1800px; 
+	width: 1800px; 
+	bottom: 700px; 
+} 
+/* This is the content for Dark Net page*/
+.dark_content1 {
+	background-color: #3c4d5d; 
+	position: relative; 
+	max-width: 900px;
+	width: 800px; 
+	top: 50px; 
+	left: 50px; 
+	border-style: dotted; 
+	border-color: #ffc62a
+}
+.dark_header1 {
+	position: relative; 
+	font-size: 20px; 
+	left: 550px; 
+	text-align: center; 
+	background-color: #3c4d5d; 
+	max-width: 700px; 
+	max-height: 100px; 
+	color: #ffc62a;
+	border-style: dotted; 
+}
+.dark_header2 {
+	text-align: center;
+	color: #ffc62a;
+} 
+.dark_video {
+	position: relative; 
+	bottom: 790px; 
+	left: 900px;
+} 	
+.dark_text2 {
+	position: relative; 
+	bottom: 1300px; 
+	left: 1400px; 
+	border-color: white; 
+	border-style: outset; 
+	max-width: 320px;  
+}
+.dark_content2 {
+	background-color: #3c4d5d; 
+	position: relative; 
+	max-width: 900px;
+	width: 700px; 
+	bottom: 903px; 
+	left: 900px; 
+	border-style: dotted; 
+	border-color: #ffc62a	
+}
+.dark_content3 { 
+	background-color: #3c4d5d; 
+	position: relative; 
+	max-width: 1200px;
+	width: 1200px; 
+	bottom: 525px; 
+	left: 250px; 
+	border-style: dotted; 
+	border-color: #ffc62a; 	
+}
+.dark_header4 {
+	text-align: center;
+	color: #ffc62a;
+} 
+.Footer3 {
+	position: relative; 
+	background-color: #3c4d5d;  
+	color: #ffc62a; 
+	max-width: 1800px; 
+	width: 1800px; 
+	bottom: 800px; 
+} 
+/* This is the content for Gaming page*/
+.gaming_text1 {
+	position: relative;
+	left: 1400px; 
+	bottom: 200px; 
+	border-color: white; 
+	border-style: outset; 
+	max-width: 340px;  
+}
+.gaming_header1 {
+	position: relative; 
+	left: 550px; 
+	font-size: 20px; 
+	text-align: center; 
+	background-color: #3c4d5d; 
+	max-width: 900px; 
+	color: #ffc62a;
+	border-style: dotted; 
+}
+.gaming_content1 {
+	background-color: #3c4d5d; 
+	position: relative; 
+	left: 10px; 
+	bottom: 100px; 
+	max-width: 600px;
+	border-style: dotted; 
+	border-color: #ffc62a; 
+} 
+.gaming_content2 {
+	background-color: #3c4d5d; 
+	position: relative; 
+	bottom: 1030px; 
+	left: 1250px; 
+	max-width: 600px;
+	border-style: dotted; 
+	border-color: #ffc62a; 
+} 
+.gaming_content3 {
+	position: relative; 
+	left: 630px; 
+	bottom: 1964px;
+	max-width: 600px;
+	border-style: dotted; 
+	border-color: #ffc62a;
+	background-color: #3c4d5d;  	
+}
+.gaming_header2 {
+	text-align: center;
+	color: #ffc62a;
+}
+.gaming_header3 {
+	text-align: center;
+	color: #ffc62a;
+}
+.gaming_slideshow {
+	position: relative; 
+	bottom: 1930px; 
+	left: 650px;
+}
+.gaming_header4 {
+	text-align: center;
+	color: #ffc62a;	
+}
+.Footer4 {
+	position: relative; 
+	background-color: #3c4d5d;  
+	color: #ffc62a; 
+	max-width: 1800px; 
+	width: 1800px; 
+	bottom: 1800px; 
+} 
+/* This is the content for Public Wifi page*/
+.public_header1 {
+	position: relative; 
+	left: 550px; 
+	font-size: 20px; 
+	text-align: center; 
+	background-color: #3c4d5d; 
+	max-width: 700px; 
+	max-height: 100px; 
+	color: #ffc62a;
+	border-style: dotted; 
+}
+.public_content1 {
+	background-color: #3c4d5d; 
+	position: relative;  
+	top: 390px; 
+	max-width: 600px;
+	border-style: dotted; 
+	border-color: #ffc62a; 	
+}
+.public_header2 {
+	text-align: center;
+	color: #ffc62a;
+}
+.public_header3 {
+	text-align: center;
+	color: #ffc62a;
+}
+.public_image {
+	position: relative; 
+	right: 10px; 
+}
+.public_content2 {
+	background-color: #3c4d5d; 
+	position: relative; 
+	left: 1200px; 
+	bottom: 770px; 
+	max-width: 600px;
+	border-style: dotted; 
+	border-color: #ffc62a; 	
+} 
+.public_content3 {
+	position: relative; 
+	left: 625px; 
+	bottom: 1200px; 
+	max-width: 550px; 
+	border-style: dotted; 
+	border-color: #ffc62a;	
+	background-color: #3c4d5d; 
+}
+.public_video {
+	position: relative; 
+	left: 625px; 
+	bottom: 1980px; 
+}
+.public_text3 {
+	position: relative; 
+	left: 1400px; 
+	bottom: 2100px; 
+	border-color: white; 
+	border-style: outset; 
+	max-width: 380px;
+}
+.Footer5 {
+	position: relative; 
+	background-color: #3c4d5d;  
+	color: #ffc62a; 
+	max-width: 1800px; 
+	width: 1800px; 
+	bottom: 1500px; 
+} 
+/* This is the content for Streaming page*/
+.streaming_header1 {
+	position: relative; 
+	left: 550px; 
+	font-size: 20px; 
+	text-align: center; 
+	background-color: #3c4d5d; 
+	max-width: 700px; 
+	max-height: 100px; 
+	color: #ffc62a;
+	border-style: dotted; 
+}
+.streaming_content1 {
+	background-color: #3c4d5d; 
+	position: relative;  
+	left: 100px; 
+	top: 50px; 
+	width: 1300px; 
+	max-width: 1300px;
+	border-style: dotted; 
+	border-color: #ffc62a; 	
+}
+.streaming_header2 {
+	text-align: center;
+	color: #ffc62a;
+}
+.streaming_header3 {
+	text-align: center;
+	color: #ffc62a;
+}
+.streaming_image {
+	position: relative; 
+	left: 1400px; 
+	top: 100px; 
+}
+.streaming_image2 {
+	position: relative; 
+	right: 1100px; 
+}
+.streaming_video {
+	position: relative; 
+	bottom: 1230px; 
+	left: 100px; 
+}
+.streaming_content2 {
+	background-color: #3c4d5d; 
+	position: relative; 
+	left: 1010px;  
+	bottom: 335px; 
+	max-width: 1200px;
+	border-style: dotted; 
+	border-color: #ffc62a; 	
+} 
+.streaming_content3 {
+	position: relative; 
+	left: 1010px; 
+	bottom: 640px; 
+	width: 700px;
+	max-width: 695px; 
+	border-style: dotted; 
+	border-color: #ffc62a;	
+	background-color: #3c4d5d; 
+}
+.streaming_text3 {
+	position: relative; 
+	left: 1350px; 
+	bottom: 2100px; 
+	border-color: white; 
+	border-style: outset; 
+	max-width: 300px;
+}
+.Footer6 {
+	position: relative; 
+	background-color: #3c4d5d;  
+	color: #ffc62a; 
+	max-width: 1800px; 
+	width: 1800px; 
+	bottom: 1200px; 
+} 
+/* This is the content for Shopping page*/
+.shopping_header1 {
+	position: relative; 
+	left: 550px; 
+	font-size: 20px; 
+	text-align: center; 
+	background-color: #3c4d5d; 
+	max-width: 700px; 
+	max-height: 100px; 
+	color: #ffc62a;
+	border-style: dotted; 
+}
+.shopping_content1 {
+	background-color: #3c4d5d; 
+	position: relative;  
+	left: 100px; 
+	top: 550px; 
+	width: 800px; 
+	max-width: 800px;
+	border-style: dotted; 
+	border-color: #ffc62a; 	
+}
+.shopping_header2 {
+	text-align: center;
+	color: #ffc62a;
+}
+.shopping_header3 {
+	text-align: center;
+	color: #ffc62a;
+}
+.shopping_image {
+	position: relative; 
+	left: 100px; 
+	bottom: 100px; 
+}
+.shopping_content2 {
+	background-color: #3c4d5d; 
+	position: relative; 
+	left: 950px;  
+	bottom: 1050px;
+	width: 700px; 
+	max-width: 700px;
+	border-style: dotted; 
+	border-color: #ffc62a; 	
+} 
+.shopping_content3 {
+	position: relative; 
+	left: 1000px; 
+	bottom: 1052px; 
+	width: 600px;
+	max-width: 600px; 
+	border-style: dotted; 
+	border-color: #ffc62a;	
+	background-color: #3c4d5d; 
+}
+.shopping_text3 {
+	position: relative; 
+	left: 1350px; 
+	bottom: 2400px; 
+	border-color: white; 
+	border-style: outset; 
+	max-width: 300px;
+}
+.Footer7 {
+	position: relative; 
+	background-color: #3c4d5d;  
+	color: #ffc62a; 
+	max-width: 1800px; 
+	width: 1800px; 
+	bottom: 1200px; 
+} 
+/* This is the content for Social Media page*/
+.social_header1 {
+	position: relative; 
+	left: 550px; 
+	font-size: 20px; 
+	text-align: center; 
+	background-color: #3c4d5d; 
+	max-width: 700px; 
+	max-height: 100px; 
+	color: #ffc62a;
+	border-style: dotted; 
+}
+.social_content1 {
+	background-color: #3c4d5d; 
+	position: relative;  
+	left: 800px; 
+	top: 50px; 
+	width: 800px; 
+	max-width: 800px;
+	border-style: dotted; 
+	border-color: #ffc62a; 	
+}
+.social_header2 {
+	text-align: center;
+	color: #ffc62a;
+}
+.social_header3 {
+	text-align: center;
+	color: #ffc62a;
+}
+.social_image {
+	position: relative; 
+	left: 700px; 
+	top: 280px; 
+}
+.social_video {
+	position: relative; 
+	bottom: 1900px; 
+	left: 1100px; 
+}
+.social_content2 {
+	background-color: #3c4d5d; 
+	position: relative; 
+	left: 50px; 
+	bottom: 1300px;
+	width: 700px; 
+	max-width: 700px;
+	border-style: dotted; 
+	border-color: #ffc62a; 	
+} 
+.social_content3 {
+	position: relative; 
+	left: 1000px; 
+	bottom: 1052px; 
+	width: 600px;
+	max-width: 600px; 
+	border-style: dotted; 
+	border-color: #ffc62a;	
+	background-color: #3c4d5d; 
+}
+.social_text3 {
+	position: relative; 
+	left: 1350px; 
+	bottom: 3300px; 
+	border-color: white; 
+	border-style: outset; 
+	max-width: 300px;
+}
+.Footer8 {
+	position: relative; 
+	background-color: #3c4d5d;  
+	color: #ffc62a; 
+	max-width: 1800px; 
+	width: 1800px; 
+	bottom: 2000px; 
+} 

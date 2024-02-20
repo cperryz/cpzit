@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Visit Manchester</title>
+</head>
+<body>
+<img src="assets\banner.jpg" alt="Images of Manchester">
+<a href="index.html">Home</a>
+<a href="page1.html">page1</a>
+<a href="page2.html">page2</a>
+<a href="page3.html">page3</a>
+<a href="page4.html">page4</a>
+<h1>MANCHESTER</h1>
+<p>Manchester is the most-populous city and metropolitan borough in North West England and Greater Manchester, England. The city has the country's fifth-largest population at 547,627 (as of 2018), lying within the United Kingdom's second-most populous urban area with a population of 2.7 million and the third most-populous county at around 2.8 million</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19038.9723928983!2d-2.19152055!3d53.38134774999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1647352695216!5m2!1sen!2suk" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<p> <video width="320" height="240" controls>
+ <source src="assets/manchester.mp4" type="video/mp4">
+ <source src="manchester.ogg" type="video/ogg">
+
+</video> </p>
+
+
+
+</body>
+</html>

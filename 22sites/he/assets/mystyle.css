@@ -1,0 +1,23 @@
+body {
+    color: white;
+    background-color: purple;
+    text-align: center;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+
+a:hover {
+    color: black;
+}
+
+
+a:active {
+    color: black;
+}

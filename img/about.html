@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script> 
+function scriptForm() 
+{ 
+    var name = document.forms["RegForm"]["Name"];               
+    var email = document.forms["RegForm"]["EMail"];    
+    var phone = document.forms["RegForm"]["Telephone"];  
+    var what =  document.forms["RegForm"]["Subject"];  
+
+    //checks if name field is empty
+    if (name.value == "")                                  
+    { 
+        window.alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    } 
+
+    //checks if email field is empty
+    if (email.value == "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+
+    //checks if email field contains @
+    if (email.value.indexOf("@", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+
+    //checks if email field contains .
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+
+    //checks if phone field is empty
+    if (phone.value == "")                           
+    { 
+        window.alert("Please enter your telephone number."); 
+        phone.focus(); 
+        return false; 
+    } 
+
+
+    //checks if any of the courses from drop down menu was selected
+    if (what.selectedIndex < 1)                  
+    { 
+        alert("Please enter your course."); 
+        what.focus(); 
+        return false; 
+    }
+
+    //if everything is filled up/selected then submission will continue without the browser giving any alert dialog boxes
+    return true; 
+}
+</script> 
+</head>
+<body>
+
+<div class="header">
+  <h2 style = "text-align: center;">About </h2>
+</div>
+
+<div class="parallax"></div>
+<div class="row" style="height:500px;" >
+
+  <div class="col-3 menu">
+
+  </div>
+
+  <div class="col-6">
+  
+	<div class="nav">
+	<a href="index.html">Home</a><a href="about.html">About Us</a><a href="index.html#work">Students' Work</a><a href="index.html#web">Students' Websites</a>
+	</div>
+	
+    <p>I currently teach the Cambridge Technicals in IT & Computing at Level 2 and Level 3</p>
+	<p>My background as a teacher goes from Physics teacher, Head of IT and Assistant Head teaching IT courses at GCSE level and level 3 and of course GCSE Computing.</p>
+	<p>We make sure there is plenty of relevant practical learning eg. social media posts, game development, software design and creating websites.</p>
+	<p>Contact Form </p>
+	<p>Enter your details and I will get back to you as soon as possible. </p>
+	<br>
+	<form name="RegForm" action="/submit.php" onsubmit="return scriptForm()" method="post">  
+
+    <p>Name: <input type="text" size=65 name="Name"> </p><br> 
+    <p>E-mail Address: <input type="text" size=65 name="EMail">  </p><br> 
+    <p>Telephone: <input type="text" size=65 name="Telephone"> </p><br> 
+
+    <p>What are you interested in:
+        <select type="text" value="" name="Subject"> 
+            <option>Extended Diploma Level 3</option> 
+            <option>Introductory Diploma (1 A' Level) Level 3</option> 
+            <option>Diploma Level 2</option> 
+            
+        </select></p><br><br> 
+
+    <p><input type="submit" value="Send" name="Submit"> 
+        <input type="reset" value="Reset" name="Reset"> 
+    </p> 
+</form> 
+  </div>
+
+  <div class="col-3 right">
+
+  </div>
+</div>
+
+<div><a class="twitter-timeline" data-width="500" data-height="250" href="https://twitter.com/ICTCheadle?ref_src=twsrc%5Etfw">Tweets by ICTCheadle</a> <script async src="https://platform.twitter.com/widgets.js" ></script>	 
+</div>
+
+<div class="footer">
+  <p>Contact: cperryz@yahoo.co.uk&nbsp;</p>
+</div>
+
+</body>
+</html>

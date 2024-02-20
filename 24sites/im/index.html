@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>ISABELA MANZATTI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Register</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">MAP</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="page1.html" class="w3-bar-item w3-button">Football Museum </a>
+      <a href="page2.html" class="w3-bar-item w3-button">Science and Industry Museum</a>
+      <a href="page3.html" class="w3-bar-item w3-button">Ao Arena </a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <form action="/action_page.php">
+    <div class="container">
+      <h1>Register</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+  
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+      <hr>
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+  
+      <button type="submit" class="registerbtn">Register</button>
+    </div>
+    
+    <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
+  </form>
+  
+  </body>
+    </head>   
+    <body>
+      <!-- First Grid -->
+      <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+          <div class="w3-twothird">
+            <img src="Assignment 2/website test/Assets/Banner.jpg" alt="">
+            <h1>Why should you visit Manchester?</h1>
+            <h5 class="w3-padding-32">You should visit Manchster because it has loads of attractions, and you can have some nice pictures to post on instagram, and also learn about the city. </h5>          
+          </div>
+      
+          <div class="w3-third w3-center">
+           <img src="" alt="">
+          </div>
+        </div>
+      </div>
+      
+
+
+      
+      
+      
+      
+      
+      </body>
+
+
+
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  
+    <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+   
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-teal w3-display-container"> 
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+       
+
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal footer</p>
+      </footer>
+    </div>
+  </div>
+  
+  <!-- Team Container -->
+  <div class="w3-container w3-padding-64 w3-center" id="team">
+  <h2>Below you can see some images related to the city of Manchester </h2>  
+  <div class="w3-row"><br>
+  
+  <div class="w3-quarter">
+    <img src="Assets/Assets/Bee-4 (1).jpg" alt="Lick on the bottom" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Manchester Bee</h3>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="Assets/Assets/Manchester 001.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Manchester  </h3>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="Assets/Assets/c17e0147-8c8f-4167-a668-29a57b417085_image_jpeg.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Football Museum</h3>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="Assets/Assets/HSBC MANCHESTER.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Manchester Museum</h3>
+ 
+  </div>
+  
+  </div>
+  </div>
+  
+  <!-- Work Row -->
+  <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+  
+  <div class="w3-quarter">
+  <h2>Why should you go to the Science and Industry Museum? </h2>
+  <p>If you want to know why Manchester was the century of industry Revolution and why Manchester has changed the world. Visiting the Science and Industry Museum is the answer. </p>
+  <p>Manchester is know as the tourist attraction, where it has : Football,Shopping and Museums.</p>
+  <p>Below you can click on the link and you can go to the real website of this incredible Museum.</p>
+  <body>
+
+   
+    
+    <p><a href="https://theculturetrip.com/europe/united-kingdom/england/articles/the-story-of-how-manchester-got-its-name">Visit this website to know how Manchester got its name.  </a></p>
+    
+    </body>
+</div>
+  
+  <div class="w3-quarter">
+    <img src="/w3images/snow.jpg" alt="" style="width:100%">
+    <div class="w3-container">
+    
+
+    </div>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="/w3images/lights.jpg" alt="" style="width:100%">
+    <div class="w3-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/o_TKIM1vUEs?si=ZLBM9_uYxVJaP90S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    </div>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="/w3images/mountains.jpg" alt="" style="width:100%">
+    <div class="w3-container">
+   
+    </div>
+    </div>
+  </div>
+  
+  </div>
+  
+  <!-- Container -->
+  <div class="w3-container" style="position:relative">
+    <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+    style="position:absolute;top:-28px;right:24px">+</a>
+  </div>
+  
+  <!-- Pricing Row -->
+  <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+      <h2>Map</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75993.27277472895!2d-2.30586248306591!3d53.47221711045478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a4d4c5226f5db%3A0xd9be143804fe6baa!2sManchester!5e0!3m2!1sen!2suk!4v1706105942661!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+      </div>
+  </div>
+  
+  <!-- Contact Container -->
+  <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+    <div class="w3-row">
+      <div class="w3-col m5">
+      <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+        <h3>Address</h3>
+        <p>Swing by for a cup of coffee, or whatever.</p>
+        <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
+        <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
+        <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+      </div>
+      <div class="w3-col m7">
+        <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+        <div class="w3-section">      
+          <label>Name</label>
+          <input class="w3-input" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">      
+          <label>Email</label>
+          <input class="w3-input" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">      
+          <label>Message</label>
+          <input class="w3-input" type="text" name="Message" required>
+        </div>  
+        <input class="w3-check" type="checkbox" checked name="Like">
+        <label>I Like it!</label>
+        <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Image of location/map -->
+  <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <h4>Follow Us</h4>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+    <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+    
+  
+    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+      <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+      <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+      <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+  </footer>
+  
+  <script>
+  // Script for side navigation
+  function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+  }
+  
+  // Close side navigation
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  
+  // Used to toggle the menu on smaller screens when clicking on the menu button
+  function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+  
+  </body>
+  </html>    
