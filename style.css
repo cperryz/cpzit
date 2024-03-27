@@ -17,6 +17,9 @@ body {
 h2 {
 	color:hotpink;
 }
+h3 {
+	color:cornflowerblue;
+}
 	
 [class*="col-"] {
   float: left;
